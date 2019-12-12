@@ -3,8 +3,8 @@
       <%= text_field_tag :query, params[:query] %>
       <%= submit_tag "Search", name: nil %>
     </p>
-<% end %>
+  <% end %>
   
-<% @students.each do |student| %>
+  <% @students.each do |student| %>
     <%= render partial: 'student', locals: {student: student} %>
-<% end %>
+  <% end %>
